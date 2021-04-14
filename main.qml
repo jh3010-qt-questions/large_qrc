@@ -6,4 +6,24 @@ Window {
     height: 480
     visible: true
     title: qsTr("Hello World")
+
+    Column {
+        Image {
+            width: 200
+            height: 200
+
+            fillMode: Image.PreserveAspectFit
+
+            source: "qrc:drawing.svg"
+        }
+
+        Image {
+
+            width: 200
+            height: 200
+
+            fillMode: Image.PreserveAspectFit
+            source: "file:///" + applicationDirPath + "/image_assets/original_image_png"
+        }
+    }
 }
